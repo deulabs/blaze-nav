@@ -1,0 +1,46 @@
+<idea-plugin version="2">
+    <name>BlazeNav</name>
+    <id>blaze-nav</id>
+    <description>Blaze fast navigation plugin for IntelliJ and derivatives (IDEA, PHPStorm, AppCode, WebStorm, PyCharm, RubyMine)</description>
+    <change-notes>Initial release of the plugin.</change-notes>
+    <version>0.1-SNAPSHOT</version>
+    <vendor email="tvaroh@icloud.com">Alexander Semenov</vendor>
+
+    <idea-version since-build="120.000"/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="blazeNavToWord"
+                class="org.jabby.blazenav.BlazeNavToWordAction"
+                text="Blaze fast navigate to a word"
+                description="Blaze fast navigate to a word">
+            <add-to-group group-id="GoToMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl SEMICOLON"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl SEMICOLON"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl SEMICOLON"/>
+            <keyboard-shortcut keymap="Emacs" first-keystroke="ctrl SEMICOLON"/>
+        </action>
+        <action id="blazeNavToLetter"
+                class="org.jabby.blazenav.BlazeNavToSymbolAction"
+                text="Blaze fast navigate to a letter"
+                description="Blaze fast navigate to a letter">
+            <add-to-group group-id="GoToMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt SEMICOLON"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl alt SEMICOLON"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl alt SEMICOLON"/>
+            <keyboard-shortcut keymap="Emacs" first-keystroke="ctrl alt SEMICOLON"/>
+        </action>
+        <action id="blazeNavToLine"
+                class="org.jabby.blazenav.BlazeNavToLineAction"
+                text="Blaze fast navigate to a line"
+                description="Blaze fast navigate to a line">
+            <add-to-group group-id="GoToMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl QUOTE"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl QUOTE"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl QUOTE"/>
+            <keyboard-shortcut keymap="Emacs" first-keystroke="ctrl QUOTE"/>
+        </action>
+    </actions>
+
+</idea-plugin>
