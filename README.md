@@ -19,7 +19,7 @@ At the moment blaze-nav is compatible with latest versions of JetBrains IDEs (In
 
 ## Installation
 
-Download plugin jar [file](https://github.com/Bohtvaroh/blaze-nav/raw/master/blaze-nav.jar) and save it locally. Next, open IntelliJ plugin settings page, press 'Install plugin from disk…' button and select the file downloaded. Restart IDE.
+Download [plugin](https://github.com/Bohtvaroh/blaze-nav/raw/master/blaze-nav.zip) and save it locally. Next, open IntelliJ plugin settings page, press 'Install plugin from disk…' button and select the file downloaded. Restart IDE.
 
 ## Hotkeys
 

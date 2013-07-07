@@ -4,7 +4,7 @@
     <description>Blaze fast navigation plugin for IntelliJ and derivatives (IDEA, PHPStorm, AppCode, WebStorm, PyCharm, RubyMine)</description>
     <change-notes>Initial release of the plugin.</change-notes>
     <version>0.1-SNAPSHOT</version>
-    <vendor email="tvaroh@icloud.com">Alexander Semenov</vendor>
+    <vendor email="tvaroh@icloud.com" url="https://github.com/Bohtvaroh/blaze-nav">Alexander Semenov</vendor>
 
     <idea-version since-build="120.000"/>
 
