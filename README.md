@@ -23,9 +23,9 @@ Download [plugin](https://github.com/Bohtvaroh/blaze-nav/raw/master/blaze-nav.zi
 
 ## Hotkeys
 
-1. **ctrl-;** - navigate to a word start;
-2. **ctrl-alt-;** - navigate to any letter or symbol;
-3. **ctrl-'** - navigate to a line.
+1. **ctrl + ;** - navigate to a word start;
+2. **ctrl + alt + ;** - navigate to any letter or symbol;
+3. **ctrl + '** - navigate to a line.
 
 These can be reassigned in settings - enter 'blaze nav' in filter on keymap preferences page to quickly locate them.
 
@@ -35,7 +35,7 @@ These can be reassigned in settings - enter 'blaze nav' in filter on keymap pref
 
 ### Navigate to word
 
-Having some text opened in editor, issue **ctrl-;** and enter letter or number which starts a word. Matching characters will be highlighted:
+Having some text opened in editor, issue **ctrl + ;** and enter letter or number which starts a word. Matching characters will be highlighted:
 
 ![Blaze fast navigate to word start](http://img35.imageshack.us/img35/7694/ifaf.png)
 
@@ -47,7 +47,7 @@ This way you can quickly navigate to any words on the screen with at most three 
 
 ### Navigate to symbol
 
-To quickly navigate to any character on the screen, issue **ctrl-alt-;** and enter the symbol you need to navigate to:
+To quickly navigate to any character on the screen, issue **ctrl + alt + ;** and enter the symbol you need to navigate to:
 
 ![Blaze fast navigate to symbol start](http://img811.imageshack.us/img811/3520/aww7.png)
 
@@ -57,7 +57,7 @@ Similarly, enter one of the highlighted letters to move cursor to its position:
 
 ### Navigate to line
 
-To navigate to some visible line start, issue **ctrl-'**. Shortcuts for each line appear:
+To navigate to some visible line start, issue **ctrl + '**. Shortcuts for each line appear:
 
 ![Blaze fast navigate to line start](http://img221.imageshack.us/img221/4341/j3a.png)
 
