@@ -1,7 +1,7 @@
 blaze-nav
 =============
 
-**blaze-nav** - blaze fast navigation plugin for IntelliJ and derivatives (IDEA, PHPStorm, AppCode, WebStorm, PyCharm, RubyMine) inspired by [ace-jump-mode](https://github.com/winterTTr/ace-jump-mode) for Emacs. In comparison with [similar plugin](https://github.com/johnlindquist/AceJump) this one stays more closely to Emacs version.
+**blaze-nav** - blaze fast navigation plugin for IntelliJ and derivatives (IDEA, PHPStorm, AppCode, WebStorm, PyCharm, RubyMine) inspired by [ace-jump-mode](https://github.com/winterTTr/ace-jump-mode) for Emacs. In comparison with [similar plugin](https://github.com/johnlindquist/AceJump) **blaze-nav** stays more closely to Emacs version and is less visually noisy.
 
 - [Contents](#table-of-contents-generator)
     - [Software requirements](#software-requirements)
