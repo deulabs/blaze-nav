@@ -8,9 +8,9 @@ blaze-nav
     - [Installation](#installation)
     - [Hotkeys](#hotkeys)
     - [How it works](#how-it-works)
-        - [Jump to word](#jump-to-word)
-        - [Jump to symbol](#jump-to-symbol)
-        - [Jump to line](#jump-to-line)
+        - [Navigate to word](#navigate-to-word)
+        - [Navigate to symbol](#navigate-to-symbol)
+        - [Navigate to line](#navigate-to-line)
     - [Reporting bugs](#reporting-bugs)
 
 ## Software requirements
@@ -19,13 +19,13 @@ At the moment blaze-nav is compatible with latest versions of JetBrains IDEs (In
 
 ## Installation
 
-Download plugin jar [file](https://github.com/Bohtvaroh/ace-jump-idea/raw/master/blaze-nav.jar) and save it locally. Next, open IntelliJ plugin settings page, press 'Install plugin from disk…' button and select the file downloaded. Restart IDE.
+Download plugin jar [file](https://github.com/Bohtvaroh/blaze-nav/raw/master/blaze-nav.jar) and save it locally. Next, open IntelliJ plugin settings page, press 'Install plugin from disk…' button and select the file downloaded. Restart IDE.
 
 ## Hotkeys
 
-1. **ctrl-;** - jump to a word start;
-2. **ctrl-alt-;** - jump to any letter or symbol;
-3. **ctrl-'** - jump to a line.
+1. **ctrl-;** - navigate to a word start;
+2. **ctrl-alt-;** - navigate to any letter or symbol;
+3. **ctrl-'** - navigate to a line.
 
 These can be reassigned in settings - enter 'blaze nav' in filter on keymap preferences page to quickly locate them.
 
@@ -33,7 +33,7 @@ These can be reassigned in settings - enter 'blaze nav' in filter on keymap pref
 
 ![Initial screen](http://img94.imageshack.us/img94/1388/3g3u.png)
 
-### Jump to word
+### Navigate to word
 
 Having some text opened in editor, issue **ctrl-;** and enter letter or number which starts a word. Matching characters will be highlighted:
 
@@ -45,7 +45,7 @@ Next, enter one of the highlighted letters to move cursor to its position:
 
 This way you can quickly navigate to any words on the screen with at most three times key press. When only single candidate exists, you'll be moved immediately.
 
-### Jump to symbol
+### Navigate to symbol
 
 To quickly navigate to any character on the screen, issue **ctrl-alt-;** and enter the symbol you need to navigate to:
 
@@ -55,7 +55,7 @@ Similarly, enter one of the highlighted letters to move cursor to its position:
 
 ![Blaze fast navigate to symbol continued](http://img713.imageshack.us/img713/6638/mdgz.png)
 
-### Jump to line
+### Navigate to line
 
 To navigate to some visible line start, issue **ctrl-'**. Shortcuts for each line appear:
 
@@ -67,4 +67,4 @@ Select one you need to move cursor to:
 
 ## Reporting bugs
 
-Use **Github** [issues](https://github.com/Bohtvaroh/ace-jump-idea/issues) page to report problems, suggest ideas and request new features.
+Use **Github** [issues](https://github.com/Bohtvaroh/blaze-nav/issues) page to report problems, suggest ideas and request new features.
