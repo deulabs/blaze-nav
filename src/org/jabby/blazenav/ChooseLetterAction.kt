@@ -31,8 +31,8 @@ class ChooseLetterAction(val key: Char,
             val unRegisterShortcutsFn = createUnRegisterShortcutsFn(editorComponent, nextActions)
 
             for ((char, offset) in keyToOffsetsMappings) {
-                val cleanup = { cleanupFns.forEach { it() }; unRegisterShortcutsFn(); unHighlightCharsFn() }
-                val next = MoveCaretToOffsetAction(keyToOffsetsMappings.get(char)!!, cleanup);
+                val next = MoveCaretToOffsetAction(
+                        keyToOffsetsMappings.get(char)!!, *cleanupFns, unRegisterShortcutsFn, unHighlightCharsFn);
                 next.registerCustomShortcutSet(CustomShortcutSet(createKeyStroke(char)), editorComponent)
                 nextActions.add(next)
             }
