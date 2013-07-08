@@ -10,7 +10,7 @@ import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.CustomShortcutSet
 
 public class BlazeNavToLineAction: NavActionBase() {
-    override fun actionPerformed(editor: Editor) {
+    protected override fun actionPerformed(editor: Editor) {
         val text = editor.getDocument().getText()!!
 
         val unFadeFn = fade(editor, text.length())

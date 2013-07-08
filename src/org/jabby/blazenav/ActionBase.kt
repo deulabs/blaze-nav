@@ -43,26 +43,21 @@ abstract class ActionBase: DumbAwareAction() {
     }
 
     protected fun setupCancellation(component: JComponent, vararg fns: () -> Unit) {
-        class KeyListener: KeyAdapter() {
+        component.addKeyListener(object : KeyAdapter() {
             public override fun keyTyped(p0: KeyEvent) {
                 runAll(*fns); component.removeKeyListener(this)
             }
-        }
-        component.addKeyListener(KeyListener())
-
-        class FocusListener: FocusAdapter() {
+        })
+        component.addFocusListener(object : FocusAdapter() {
             public override fun focusLost(p0: FocusEvent) {
                 runAll(*fns); component.removeFocusListener(this)
             }
-        }
-        component.addFocusListener(FocusListener())
-
-        class MouseListener: MouseAdapter() {
+        })
+        component.addMouseListener(object : MouseAdapter() {
             public override fun mouseClicked(p0: MouseEvent) {
                 runAll(*fns); component.removeMouseListener(this)
             }
-        }
-        component.addMouseListener(MouseListener())
+        })
     }
 
     protected fun runAll(vararg fns: () -> Unit): Unit = fns.forEach { it() }

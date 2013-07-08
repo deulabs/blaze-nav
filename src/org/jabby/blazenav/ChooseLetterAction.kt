@@ -12,6 +12,7 @@ class ChooseLetterAction(val key: Char,
                          val offsets: Collection<Int>,
                          val unRegisterShortcutsFn: () -> Unit,
                          vararg val cleanupFns: () -> Unit): ActionBase() {
+
     public override fun actionPerformed(e: AnActionEvent?) {
         unRegisterShortcutsFn()
 
@@ -44,7 +45,7 @@ class ChooseLetterAction(val key: Char,
             assert(keyToOffsetsMappings.size == 1)
             setStatusText(editor, "one.candidate");
             moveCaretTo(editor, keyToOffsetsMappings.values().first());
-            cleanupFns.forEach { it() }
+            runAll(*cleanupFns)
             unRegisterShortcutsFn()
         }
     }
